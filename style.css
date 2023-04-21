@@ -1,0 +1,66 @@
+.cuerpo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#uno{
+    background-image: url(https://www.descubriendobuenosaires.com/wp-content/uploads/2019/12/Obelisco-32.jpg);
+}
+#dos{
+    background-image: url(https://www.elsoldemexico.com.mx/doble-via/gllk4u-el-angel-de-la-independencia-en-realidad-no-es-un-angel.jpeg/ALTERNATES/LANDSCAPE_960/El%20%C3%81ngel%20de%20la%20Independencia%20en%20realidad%20no%20es%20un%20%C3%A1ngel.jpeg);
+}
+#tres{
+    background-image: url(https://imagenes.20minutos.es/files/image_990_v3/uploads/imagenes/2018/09/03/555994.jpg);
+    background-size: cover;
+}
+.cartas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    height: 40px;
+}
+.card{
+    width: 70px;
+    height: 85vh;
+    margin: 30px;
+    border-radius: 50px;
+}
+.card h3{
+    color: #FFF;
+    display: none;
+}
+.active{
+    width: 50vw;
+    animation:crecer 1.5s ease-in-out ;
+} 
+.active h3{
+    display: block;
+    position: relative;
+    top:300px;
+    font-size: 40px;
+}
+
+@keyframes crecer{
+    0%{
+        height: 2vh;
+        width: 20vw;
+        position:relative;
+        top:200px;
+    }
+    50%{
+        height: 5vh;
+        width: 40vw;
+        position:relative;
+        top:200px;
+    }
+    75%{
+        top:100px
+    }
+    100%{
+        height: 80vh;
+    }
+}
