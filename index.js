@@ -2,8 +2,7 @@ const card = document.querySelectorAll('.card')
 
 function quitClass(){
     card.forEach(carta =>{
-        carta.classList.remove('active'),
-        console.log('quit')
+        carta.classList.remove('active')
     })
 }
 card.forEach(carta =>{
